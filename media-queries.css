@@ -1,13 +1,14 @@
+
 @media only screen and (max-width: 780px){
 
-html	body {
-	background-color: #202225;
+html  body {
+  background-color: #202225;
 }
 
 .Wrapper {
-	min-width:50%;
+  min-width:50%;
   margin: 0px;
-  position: relative;	
+  
 }
 
 .container {  /*#463fc6  #fd11ff*/
@@ -33,6 +34,11 @@ html	body {
   width: 25%;
   height: 69px;
   margin-left: 20%;
+  display: block;
+}
+
+#logo_query_web {
+  display: none;
 }
 
 .flame_img {
@@ -73,5 +79,3 @@ html	body {
   text-align: center;
   background: linear-gradient(to left, #ff11ff, #5b53ff);
 }
-
-
