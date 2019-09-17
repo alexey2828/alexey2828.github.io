@@ -1,17 +1,18 @@
 @import url(http://fonts.googleapis.com/css?family=Lato);
 
 html body {
-	width: 100%;
+	width:100%
 	height: 100%;
 	background-image:url(bg.png);
 }
 
 .wrapper {
-	width: 1150px;
+	width: 80%;
 	display: block;
 	justify-content: center;
 	align-items: center;
 	text-align: center;
+  position: relative;
 }
 
 
@@ -128,6 +129,7 @@ label {
 	color:white;
 	font-family: 'GRACETIANS', sans-serif;
 	font-size: 14px;
+  position: relative;
 }
 
 #td {
@@ -146,7 +148,7 @@ label {
 	font-weight: 500;
 	font-size: 18px;
 	font-family: 'GRACETIANS', sans-serif;
-	color: #4e21c2;
+	color: #0078d7;
 	font-weight: 600;
 
 }
@@ -159,7 +161,7 @@ label {
 }
 
  a.gg2:visited  {
-    color: #ff00b4; /* #4e21c2*/
+    color: #0078d7; /* #4e21c2*/
    } 
    a.gg2:hover  {
     color: silver;
@@ -182,7 +184,7 @@ label {
    }
 .info {
 	padding-top: 5px;
-  margin-top: 0px;
+  margin-top: -15px;
 }
 
 .btn2 {
@@ -210,6 +212,7 @@ label {
 
 @import url(https://fonts.googleapis.com/css?family=Rubik+One&subset=latin,cyrillic);
 .gradient-text {
+  margin-left: 40%; 
   font-family: 'GRACETIANS', sans-serif;
   font-weight: 600;
   text-transform: uppercase;

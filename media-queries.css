@@ -1,34 +1,38 @@
 @media only screen and (max-width: 780px){
-	body {
-  width: 500px; 
+
+html	body {
 	background-color: #202225;
 }
-.Wrapper {
-	width: 500px;
-  margin: 0px;
-	}
 
-.container {
-  width: 600px;
+.Wrapper {
+	min-width:50%;
+  margin: 0px;
+  position: relative;	
+}
+
+.container {  /*#463fc6  #fd11ff*/
+  width:480px;
 }
 
 .nav {
   background-color: #292c2f;
-  width: 500px;
-}
-
-.content {
-  width: 500px;
+  width:480px;
 }
 
 .item1 {
-  width: 500px;
+  width: 480px;
 }
 
-img {
+#query_img {
   width: 70%;
   height: 50px;
   display: inline-block;
+}
+
+#logo_query {
+  width: 25%;
+  height: 69px;
+  margin-left: 20%;
 }
 
 .flame_img {
@@ -37,19 +41,26 @@ img {
 }
 
 .top-menu {
-  width: 500px;
+  width: 480px;
 }
 
 .item2 {
   width: 0px;
   height: 0px;
+  display: none;
 }
 
 .info {
   margin-top: -15px;
   padding-top: 5px;
-	}
+  
+}
 
+
+.content {
+  margin-top: 70px;
+  width: 480px; 
+}
 
 .btn2 {
   font-weight: 600;
@@ -62,3 +73,5 @@ img {
   text-align: center;
   background: linear-gradient(to left, #ff11ff, #5b53ff);
 }
+
+
