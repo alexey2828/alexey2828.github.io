@@ -253,6 +253,7 @@ a.gg1 {
 }
 
 #text {
+  width: 360px;
   font-size: 22px;
   text-align: left;
   margin-left: 20px;
