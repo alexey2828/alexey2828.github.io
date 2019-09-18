@@ -4,6 +4,7 @@
 @media only screen and (max-width: 780px){
 
 html  body {
+   width:100%;
   background-color: #202225;
   touch-action: manipulation; 
 }
