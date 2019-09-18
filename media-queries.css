@@ -1,7 +1,7 @@
 
 
 
-@media only screen and (max-width: 780px){
+@media only screen and (max-width: 380px){
 
 html  body {
   background-color: #202225;
@@ -22,12 +22,12 @@ a.gg1 {
 }
 
 .container {  /*#463fc6  #fd11ff*/
-  width:480px;
+  width:380px;
 }
 
 .nav {
   background-color: #292c2f;
-  width:480px;
+  width:380px;
 }
 
 .item1 {
@@ -36,7 +36,7 @@ a.gg1 {
 
 .item1 {
   margin-top: 50px;
-  width: 480px;
+  width: 380px;
   height: 360px;
   background-color: #292c2f;
   box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.6); /* Тень */
@@ -66,7 +66,7 @@ a.gg1 {
 }
 
 .top-menu {
-  width: 480px;
+  width: 380px;
 }
 
 .item2 {
@@ -84,7 +84,7 @@ a.gg1 {
 
 .content {
   margin-top: 70px;
-  width: 480px; 
+  width: 380px; 
 }
 
 .btn2 {
