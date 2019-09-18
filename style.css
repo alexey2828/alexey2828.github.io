@@ -81,6 +81,15 @@ label {
        
 }
 
+#query_img {
+  display: inline-block;
+}
+
+#flat {
+  float: right;
+  margin-right: 10px;
+}
+
 #logo_query {
   width: 25%;
   height: 69px;
@@ -90,7 +99,7 @@ label {
 
 #logo_query_web {
   width: 200px;
-  height: 100px;
+  height: 120px;
   margin-left: -20%;
 }
  
@@ -114,13 +123,15 @@ label {
 }
 
 .item1 {
-  margin-top: 30px;
+  margin-top: 50px;
   width: 850px;
   height: 260px;
   background-color: #292c2f;
   box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.6); /* Тень */
 
 }
+@import url('https://fonts.googleapis.com/css?family=Anton&display=swap');
+
 
 .item2 {
   margin-top: -70px;
@@ -128,7 +139,7 @@ label {
   height: 100%;
   background-color: #292c2f;
   color: white;
-  font-family: 'GRACETIANS', sans-serif;
+  font-family: 'Anton', sans-serif;
   box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.6); /* Тень */
   position: fixed;
 }
@@ -142,13 +153,14 @@ label {
 
 .item4 {
   color:white;
-  font-family: 'GRACETIANS', sans-serif;
+  font-family: 'Anton', sans-serif;  
   font-size: 14px;
   position: relative;
 }
 
 #td {
   margin-left: 20px;
+  color:gray;
 }
 
 #table{
@@ -162,7 +174,7 @@ label {
   margin-left: 20px;
   font-weight: 500;
   font-size: 18px;
-  font-family: 'GRACETIANS', sans-serif;
+  font-family: 'Anton', sans-serif;
   color: #0078d7;
   font-weight: 600;
 
@@ -172,7 +184,12 @@ label {
 #text {
   text-align: left;
   margin-left: 20px;
-  color: gray;
+  color: white;
+}
+
+a.gg1 {
+  color: #0078d7;
+  display: none;
 }
 
  a.gg2:visited  {
@@ -225,10 +242,10 @@ label {
 }
 
 
-@import url(https://fonts.googleapis.com/css?family=Rubik+One&subset=latin,cyrillic);
+@import url('https://fonts.googleapis.com/css?family=Anton&display=swap');
 .gradient-text {
-  margin-left: 40%; 
-  font-family: 'GRACETIANS', sans-serif;
+  margin-top: -30px; 
+  font-family: 'Roboto Condensed', sans-serif;
   font-weight: 600;
   text-transform: uppercase;
   background: linear-gradient(45deg, #ff11ff 33%, #523ed9 66%, #5b53ff);
@@ -245,9 +262,40 @@ label {
 }
 
 #categorie_argin1 {
-  margin-top: 40px;
+  margin-top: 30px;
+  font-family: 'Anton', sans-serif;
+}
+
+#categorie_argin {
+  font-family: 'Anton', sans-serif;
+  margin-top: 25px;
+}
 }
 
 
+.info {
+  padding-top: 5px;
+  margin-top: -15px;
+}
 
+.btn3 {
+  font-weight: 600;
+  margin-left: 260px;
+  position: relative;
+  width: 150px;
+  height: 30px;
+  margin-top: 50px;
+  border-radius: 30px;
+  text-align: center;
+  background: linear-gradient(to left, #ff11ff, #5b53ff);
+}
 
+.btn3:hover{
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+
+  width: 150px;
+  height: 30px;
+  background: linear-gradient(to left, #5b53ff ,#ff11ff );
+}
