@@ -20,12 +20,12 @@ a.gg1 {
 }
 
 .container {  /*#463fc6  #fd11ff*/
-  width:100%;
+  width:480px;
 }
 
 .nav {
   background-color: #292c2f;
-  width:100%;
+  width:480px;
 }
 
 .item1 {
@@ -34,7 +34,7 @@ a.gg1 {
 
 .item1 {
   margin-top: 50px;
-  width:100%;
+  width: 480px;
   height: 360px;
   background-color: #292c2f;
   box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.6); /* Тень */
@@ -64,7 +64,7 @@ a.gg1 {
 }
 
 .top-menu {
-  width:100%;
+  width: 480px;
 }
 
 .item2 {
