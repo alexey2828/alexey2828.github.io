@@ -5,7 +5,7 @@
 
 html  body {
   background-color: #202225;
-  /*touch-action: manipulation; /*
+  touch-action: manipulation; 
 }
 
 a.gg1 {
@@ -30,14 +30,11 @@ a.gg1 {
   width:480px;
 }
 
-.item1 {
-  
-}
 
 .item1 {
   margin-top: 50px;
   width: 480px;
-  height: 360px;
+  height: 390px;
   background-color: #292c2f;
   box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.6); /* Тень */
 
@@ -173,7 +170,7 @@ a.gg1 {
 .item1 {
   margin-top: 50px;
   width: 400px;
-  height: 360px;
+  height: 430px;
   background-color: #292c2f;
   box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.6); /* Тень */
 
