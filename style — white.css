@@ -6,7 +6,6 @@ html body {
   width:100%
   height: 100%;
   background-image:url(silver.png);
-
 }
 
 a {
@@ -58,7 +57,7 @@ label {
     display: none;
     width: 26px;
     float: right;
-    color: #121415;
+    color: #d4d5d7;
 }
 #toggle {
     display: none;
