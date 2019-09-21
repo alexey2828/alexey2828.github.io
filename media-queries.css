@@ -5,7 +5,7 @@
 
 html  body {
   background-color: #202225;
-  touch-action: manipulation; 
+  /*touch-action: manipulation; /*
 }
 
 a.gg1 {
