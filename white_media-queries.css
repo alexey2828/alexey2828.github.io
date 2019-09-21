@@ -26,7 +26,7 @@ a.gg1 {
 }
 
 .nav {
-  background-color: #292c2f;
+  background-color: white;
   width:480px;
 }
 
@@ -35,8 +35,8 @@ a.gg1 {
   margin-top: 50px;
   width: 480px;
   height: 390px;
-  background-color: #292c2f;
-  box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.6); /* Тень */
+  background-color: white;
+  box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.1); /* Тень */
 
 }
 
@@ -117,7 +117,7 @@ a.gg1 {
   font-size: 22px;
   text-align: left;
   margin-left: 20px;
-  color: white;
+  color: #282828;
 }
 
 .gradient-text {
