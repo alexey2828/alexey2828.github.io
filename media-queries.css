@@ -17,7 +17,7 @@
     }
 
     .logo_wiz {
-      margin-top: 5%;
+      margin-top: -100px;
       margin-left: 100%;
     }
 
@@ -26,11 +26,32 @@
 		padding-top: 200px;
     	margin-top: -65px;
     	margin-left: -200px;
-      }
+    	font-family: Verdana, Helvetica, Roboto-Thin , sans-serif;
+    }
 
-      .par {
+    .par {
   		padding-top:0px;
   		color: #2E7179;
   		width: 900px;
- 		}
+ 	}
+
+ 	.content2 {
+  		display: flex;
+  		margin-left: -190px;
+  		width: 390px;
+  		margin-top: 100px;
+	}
+	.item2 {
+  		margin-left: 30px; 		
+	}	
+
+	.item3 {
+  		margin-top: 240px; 
+  		margin-left: -400px;  		
+	}
+
+	.item4 {
+  		margin-top: 480px; 
+  		margin-left: -400px;	
+	}
 }
