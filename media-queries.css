@@ -17,7 +17,7 @@
     }
 
     .logo_wiz {
-      margin-top: -100px;
+      margin-top: -60px;
       margin-left: 100%;
     }
 
@@ -39,19 +39,32 @@
   		display: flex;
   		margin-left: -190px;
   		width: 390px;
-  		margin-top: 100px;
+  		margin-top: 0px;
 	}
 	.item2 {
   		margin-left: 30px; 		
 	}	
 
 	.item3 {
-  		margin-top: 240px; 
+  		margin-top: 290px; 
   		margin-left: -400px;  		
 	}
 
 	.item4 {
-  		margin-top: 480px; 
+  		margin-top: 580px; 
   		margin-left: -400px;	
 	}
+
+	p#info {
+      color: white;
+      margin-top: 6px;
+      font-family: 'Abel', sans-serif;
+      font-size: 20px;
+    }
+
+    p#info2 {
+      color: gray;
+      margin-top: -18px;
+      font-size: 14px;
+    }
 }
