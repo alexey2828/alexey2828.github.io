@@ -88,3 +88,126 @@
       font-size: 14px;
     }
 }
+
+
+@media screen and (max-width: 800px){
+	html body header {
+		width: 800px; 
+	}
+
+	.wrapper {
+  		max-width: 100%; 
+	}
+
+
+	p {
+		margin-top: -20px;
+		width: 680px; 
+		font-size: 24px; 
+	}
+	.content1 {
+    	margin: 0px;
+    	margin-left: 1px;
+    	max-width: 100%;
+    	height: 900px;
+    	background-color: #1B1B1B;
+    	border: 1px solid #1B1B1B;
+    	display: flex; 
+    }
+
+    .logo_wiz {
+      margin-top: -15px;
+      margin-left: 200%;
+    }
+
+	.text {
+		width: 680px;
+		height: 400px;
+		padding-top: 200px;
+    	margin-top: -65px;
+    	margin-left: -200px;
+    	font-family: Verdana, Helvetica, Roboto-Thin , sans-serif;
+    }
+
+    .par {
+  		padding-top:0px;
+  		color: #2E7179;
+  		width: 800px;
+  		height: 700px;
+
+ 	}
+
+ 	.content2 {
+  		display: flex;
+  		margin-left: -190px;
+  		width: 390px;
+  		margin-top: 0px;
+	}
+	.item2 {
+  		margin-left: 30px; 		
+	}	
+
+	.item3 {
+  		margin-top: 290px; 
+  		margin-left: -400px;  		
+	}
+
+	.item4 {
+  		margin-top: 580px; 
+  		margin-left: -400px;	
+	}
+	.wiz {
+      margin: 120px;
+      float: left;
+      width: 800px;
+      height: 200px;
+      color: white;
+      box-sizing: border-box;
+      font-family: Lato;  
+    }
+
+    .par {
+  		padding-top: 30px;
+  		color: #2E7179;
+  		width: 800px;
+ 	}	
+
+ 	.buttons {
+  		margin-top: -230px;
+		}
+
+	p#info {
+      color: white;
+      margin-top: 6px;
+      font-family: 'Abel', sans-serif;
+      font-size: 20px;
+    }
+
+    p#info2 {
+      color: gray;
+      margin-top: -18px;
+      font-size: 14px;
+    }
+
+    .button {
+ margin-left: 5%;
+ cursor: pointer;
+ border: 0px;
+ border-radius: 20px;
+ border: 4px solid #1B1B1B;
+ background-color: #1B1B1B;
+ font-size: 24px;
+ color:#636550;
+ 
+ -moz-box-shadow: 0 0 5px black;
+ -ms-box-shadow: 0 0 5px black;
+ -o-box-shadow: 0 0 5px black;
+
+
+}
+.button:hover {
+ -ms-box-shadow: 0 0 12px black;
+ -webkit-box-shadow: 0 0 12px black;
+ border-radius: 20px;
+}
+}
