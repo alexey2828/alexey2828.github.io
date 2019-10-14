@@ -1,6 +1,8 @@
 @import url(http://fonts.googleapis.com/css?family=Lato);
 .wrapper {
   width: 100%;
+  max-width: 2200px;
+  margin: 0 auto;
 }
 
 #nav
@@ -155,7 +157,7 @@ nav{
     .content1 {
       margin-top: 80px;
       margin-left: -5px;
-      max-width: 100%;
+      width: 100%;
       height: 500px;
       background-color: #1B1B1B;
       border: 1px solid #1B1B1B;
@@ -316,19 +318,3 @@ padding: 3px 15px;
 .overlay:hover {
   opacity: 1;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
