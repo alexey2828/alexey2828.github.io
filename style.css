@@ -293,10 +293,10 @@ i {
     padding-top: 30px;
 }
 
-.col-md-4 {
+.col4 {
     margin-top: 30px;
     border-radius: 10px;
-    width: 300px;
+    width: 400px;
     background: black;
     margin-left: 30px;
     height: 250px;
@@ -308,21 +308,40 @@ i {
     padding-top: 60px;
 }
 
-.container{
-    width: 1600px;
+.container-my {
+    max-width: 1860px;   
+}
+
+img {
+    border-radius: 10px;
+}
+
+label {
+    color: white;
+}
+
+.button_text {
+    margin-top: -15px;
+    color: gray;
 }
 
 @media screen and (max-width: 600px) {
-  .col-md-4 {
-    margin-right: 20px;
-    margin-left: -20px;
-    margin-top: 30px;
+  .row {
+    margin-top: -40px;
+  }
+  .col4 {
+    margin-right: 10px;
+    margin-top: 70px;
     border-radius: 10px;
-    width: 160px;
+    width: 90%;
     background: black;
     margin-left: 30px;
     height: 250px;
     box-shadow: 0 0 20px rgba(0,0,0,0.5);
     background-image: url('https://c4.wallpaperflare.com/wallpaper/246/739/689/digital-digital-art-artwork-illustration-abstract-hd-wallpaper-thumb.jpg');
+}
+img {
+    width: 460px;
+    border-radius: 10px;
 }
 }
