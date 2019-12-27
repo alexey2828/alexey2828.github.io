@@ -47,7 +47,7 @@ body {
   background-color: black;
   opacity: 0.9; /* Полупрозрачный фон */
   filter: alpha(Opacity=90); /* Прозрачность в IE */
-  margin: 0 50px 0 50px;
+  margin: 0 30px 0 30px;
 
 }
 
@@ -69,6 +69,13 @@ body {
   text-decoration: none;
 }
 
+#bars_color {
+  color: #d81159;
+  box-shadow: 0 0 15px black; /* Параметры тени */ 
+  margin-top: 5px;
+}
+
+
 .active {
   color: white;
 }
@@ -77,10 +84,16 @@ body {
   display: none;
 }
 
+#profile_user {
+  margin-top: 15px;
+  float: right;
+  margin-right: 60px;
+}
+
 @media screen and (max-width: 600px) {
   .topnav a:not(:first-child) {display: none;}
   .topnav a.icon {
-    float: right;
+    float: left;
     display: block;
   }
 }
@@ -91,6 +104,7 @@ body {
     position: absolute;
     right: 0;
     top: 0;
+
   }
   .topnav.responsive a {
     float: none;
@@ -130,7 +144,7 @@ input[type=text]:focus {
               z-index: 30;
               position: fixed;
               width: 56px;
-              left: 90%;
+              left: 93%;
               bottom: 15px;
               margin-left: -28px;
             }
@@ -284,7 +298,10 @@ h4 {
 }
 
 i {
-    color: #d81159;
+    color: #00bfff;
+    box-shadow: 0 0 15px #00bfff;
+    border-radius: 50%; 
+    float:right;
 }
 
 /*---------------------блоки-------------------*/
@@ -293,27 +310,38 @@ i {
     padding-top: 30px;
 }
 
-.col-md-4 {
-    margin-top: 30px;
+.col4 {
+    margin-top: 60px;
     border-radius: 10px;
-    width: 300px;
-    background: black;
-    margin-left: 30px;
-    height: 250px;
+    width: 350px;
+    background: #222222;
+    margin-left: 50px;
+    height: 230px;
     box-shadow: 0 0 20px rgba(0,0,0,0.5);
-    background-image: url('https://c4.wallpaperflare.com/wallpaper/246/739/689/digital-digital-art-artwork-illustration-abstract-hd-wallpaper-thumb.jpg');
-}
-
-.content_index {
-    padding-top: 60px;
 }
 
 .container-my {
-    max-width: 1860px;   
+    max-width: 90%;   
 }
 
 img {
     border-radius: 10px;
+    width: 350px;
+    height: 230px;
+}
+
+#profile_user {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  z-index: 1000;
+  position: relative;
+  margin-top: 0px;
+  margin-right: 7%;
+}
+
+h3 {
+    color: white;
 }
 
 label {
@@ -327,11 +355,20 @@ label {
 
 @media screen and (max-width: 600px) {
     .container-my {
-    max-width: 400px;   
+    max-width: 390px;   
 }
+  .col4 {
+    margin-top: 60px;
+    border-radius: 10px;
+    width: 390px;
+    background: #222222;
+    margin-left: 20px;
+    height: 250px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+  }
   .col-md-4 {
+    text-align: center;
     margin-right: 20px;
-    margin-left: -20px;
     margin-top: 30px;
     border-radius: 10px;
     width: 160px;
@@ -340,7 +377,22 @@ label {
     height: 250px;
     box-shadow: 0 0 20px rgba(0,0,0,0.5);
 }
+img {
+    border-radius: 10px;
+    width: 390px;
+    height: 250px;
+}
 
 }
 
-
+.col4_main:hover * {
+  transform: translateY(-5px);
+}
+ 
+.col4{
+  transition-duration: .9s
+}
+.col4:hover {
+  box-shadow: 0 0 15px white;  
+}
+ 
