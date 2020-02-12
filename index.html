@@ -1,232 +1,166 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title></title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="utf-8">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="ff.ico" type="gx-icon">
-  <link rel="stylesheet" type="text/css" href="style_index_page.css">
-  <link rel="stylesheet" type="text/css" href="media-queries.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
-  </head>
-  <body>
-    <div class="wrapper">
-      <div class="menu2">
-        <center>
-          <div class="hat">
-                
-            <a href="login.html" id="profile_user">Sing in
-            <!--<img id="profile_user" src="https://cdn.discordapp.com/attachments/466314747281801228/660108556833652756/JPEG_20191225_160011.jpg" width="50" height="50">--></a>
-            <a href="reg.html" id="profile_user_reg">Sing up
-            <!--<img id="profile_user" src="https://cdn.discordapp.com/attachments/466314747281801228/660108556833652756/JPEG_20191225_160011.jpg" width="50" height="50">--></a>
+	<title>bioproj</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.2.3/jquery.min.js"></script>
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<div class="naw">
+		<div class="container">
+			<div class="logo"><img width="100" height="60" src="Three_Virtues_Silhouette.png">
+			<o class="menu">
+				<a href="#" style="margin-left: 5%;">VK</a>
+				<a href="#" style="margin-left: 2%;">RUSBIONICLE</a>
+				<a href="#" style="margin-left: 2%;">RBACH</a>
+				<a href="#" style="margin-left: 2%;">OTHER</a>
+			</o>
+			</div>
+			
+			<div class="auth">
+				
+				<a class="auth_link" href="#">Sing up</a> <a class="auth_link" href="#">ᅠSing up</a>
+			</div>
+		</div>
+		<i id="showHideContent"><i class="material-icons" style="font-size:36px" id="hov">apps</i></i>
+		<div id="content" style="display:none;">
+			<a id="links" href="#">Rbach</a><br>
+			<a id="links" href="#">RB</a><br>
+			<a id="links" href="#">VK</a><br>
+			<a id="links" href="#">Discord</a><br>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div id="content_main" class="col-md-9">
+				<br><br>
+				<div class="back_content">
+					
+				</div>
+				<marquee behavior="scroll" id="marquee" direction="left">Вступайде в наше сообщество фанатов Бионикл прямо сейчас! Свежые новости, самоделки, анонсы и многое другое ждет вас в нашей группе!</marquee>
 
-          <div class="topnav" id="myTopnav">
-            <a href="index.html" class="active">Queen</a>
-            <a href="index.html">Home</a>
-            <a href="home.html">Wallpapers</a>
-            <a href="#contact">Collections</a>
-            <a href="#about">About</a>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-              <i id="bars_color" class="fa fa-bars"></i>
-            </a>  
-          </div>  
-          </div>
-        </center>
-      </div>
-          <div class="back">
-            <div class="title">
-            <h3>Welcome to Wallpapers UP!</h3><small>be better every day</small>
-            <div class="button_lg">
-                <a class="effect1" href="#">
-                  Let's Go!
-                  <span class="bg"></span>
-                </a>
-            </div>
-          </div>
-        </div>
-      <div class="fab">
-        <span class="fab-action-button">
-              <i class="fab-action-button__icon"></i>
-          </span>
-        <ul class="fab-buttons">
-          <li class="fab-buttons__item">
-            <a href="#" class="fab-buttons__link" data-tooltip="Facebook">
-              <i class="icon-material icon-material_fb"></i>
-            </a>
-          </li>
-          <li class="fab-buttons__item">
-            <a href="#" class="fab-buttons__link" data-tooltip="Twitter">
-              <i class="icon-material icon-material_tw"></i>
-            </a>
-          </li>
-          <li class="fab-buttons__item">
-            <a href="#" class="fab-buttons__link" data-tooltip="Linkedin">
-              <i class="icon-material icon-material_li"></i>
-            </a>
-          </li>
-          <li class="fab-buttons__item">
-            <a href="#" class="fab-buttons__link" data-tooltip="Google+">
-              <i class="icon-material icon-material_gp"></i>
-            </a>
-          </li>
-        </ul>
-      </div>
-    <center>  
-      <div class="container-my">
-        <div class="content_index">
-          <div class="row">
-            <div class="col4_main">
-              <div class="col4">
-                <img src='https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg'   width="400" height="250" alt="image" class="img-responsive zoom-img">
-                <center><h3>Название статьи</h3>
-                <div class="button_text">введите название статьи</p></div></center>
-                </div>
-              </div>
-                <div class="col4_main">
-              <div class="col4">
-                <img src='https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg'   width="400" height="250" alt="image" class="img-responsive zoom-img">
-                <center><h3>Название статьи</h3>
-                <div class="button_text">введите название статьи</p></div></center>
-                </div>
-              </div>
-              <div class="col4_main">
-              <div class="col4">
-                <img src='https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg'   width="400" height="250" alt="image" class="img-responsive zoom-img">
-                <center><h3>Название статьи</h3>
-                <div class="button_text">введите название статьи</p></div></center>
-                </div>
-              </div>
-              <div class="col4_main">
-              <div class="col4">
-                <img src='https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg'   width="400" height="250" alt="image" class="img-responsive zoom-img">
-                <center><h3>Название статьи</h3>
-                <div class="button_text">введите название статьи</p></div></center>
-                </div>
-              </div>
-              <div class="col4_main">
-              <div class="col4">
-                <img src='https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg'   width="400" height="250" alt="image" class="img-responsive zoom-img">
-                <center><h3>Название статьи</h3>
-                <div class="button_text">введите название статьи</p></div></center>
-                </div>
-              </div>
-              <div class="col4_main">
-              <div class="col4">
-                <img src='https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg'   width="400" height="250" alt="image" class="img-responsive zoom-img">
-                <center><h3>Название статьи</h3>
-                <div class="button_text">введите название статьи</p></div></center>
-                </div>
-              </div>
-              <div class="col4_main">
-              <div class="col4">
-                <img src='https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg'   width="400" height="250" alt="image" class="img-responsive zoom-img">
-                <center><h3>Название статьи</h3>
-                <div class="button_text">введите название статьи</p></div></center>
-                </div>
-              </div>
-              <div class="col4_main">
-              <div class="col4">
-                <img src='https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg'   width="400" height="250" alt="image" class="img-responsive zoom-img">
-                <center><h3>Название статьи</h3>
-                <div class="button_text">введите название статьи</p></div></center>
-                </div>
-              </div>
-              <div class="col4_main">
-              <div class="col4">
-                <img src='https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg'   width="400" height="250" alt="image" class="img-responsive zoom-img">
-                <center><h3>Название статьи</h3>
-                <div class="button_text">введите название статьи</p></div></center>
-                </div>
-              </div>
-              <div class="col4_main">
-              <div class="col4">
-                <img src='https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg'   width="400" height="250" alt="image" class="img-responsive zoom-img">
-                <center><h3>Название статьи</h3>
-                <div class="button_text">введите название статьи</p></div></center>
-                </div>
-              </div>
-              <div class="col4_main">
-              <div class="col4">
-                <img src='https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg'   width="400" height="250" alt="image" class="img-responsive zoom-img">
-                <center><h3>Название статьи</h3>
-                <div class="button_text">введите название статьи</p></div></center>
-                </div>
-              </div>
-              <div class="col4_main">
-              <div class="col4">
-                <img src='https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg'   width="400" height="250" alt="image" class="img-responsive zoom-img">
-                <center><h3>Название статьи</h3>
-                <div class="button_text">введите название статьи</p></div></center>
-                </div>
-              </div>
-              <div class="col4_main">
-              <div class="col4">
-                <img src='https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg'   width="400" height="250" alt="image" class="img-responsive zoom-img">
-                <center><h3>Название статьи</h3>
-                <div class="button_text">введите название статьи</p></div></center>
-                </div>
-              </div>
-              <div class="col4_main">
-              <div class="col4">
-                <img src='https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg'   width="400" height="250" alt="image" class="img-responsive zoom-img">
-                <center><h3>Название статьи</h3>
-                <div class="button_text">введите название статьи</p></div></center>
-                </div>
-              </div>
-              <div class="col4_main">
-              <div class="col4">
-                <img src='https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg'   width="400" height="250" alt="image" class="img-responsive zoom-img">
-                <center><h3>Название статьи</h3>
-                <div class="button_text">введите название статьи</p></div></center>
-                </div>
-              </div>
-          </div>
-        </div>
-      </div>
-    </center>
-      <div id="overlay">
-          <div class="popup">
-            <br>
-              <h4>WallpaperHub uses cookies to improve your experience, read the Privacy Policy for more information</h4>             
-              <button class="close" title="Закрыть" onclick="document.getElementById('overlay').style.display='none';"><i>ok</i></button>
-          </div>
-      </div>
-  </div>
+				<div class="item">
+					<div class="row">
+						<div class="col-md-5"><i class="fa fa-youtube-play" style="margin: 18px; position: absolute; float: right; font-size:36px; color: #e02828;"></i>
+					<div class="image"><img id="card_img" width="350" height="250" src="https://i.ytimg.com/vi/pyH_3d3PzTM/maxresdefault.jpg"></div></div>
+						<div class="col-md-7">
+							<div class="card_content"><a href="">СКОРО! Стрим посвященный открытию... </a></div>
+							<div class="dd">
+								<div class="card_items">11.20.2020</div>
+								<div class="card_items"><i class="fa fa-users" style="font-size:24px; color: orange;" > </i><a style="color: gray;" href="#"> Комьюнити</a></div>
+								<div class="card_items">by Alfawin</div>
+							</div>
+							<div style=" margin-top: 15px;  display: block; color: #65656c; margin-left: 20px;">
+								Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="item">
+					<div class="row">
+						<div class="col-md-5"><i class="fa fa-vk" style="margin: 18px; position: absolute; float: right; font-size:36px; color: #6d12cc;"></i>
+					<div class="image"><img id="card_img" width="350" height="250" src="https://i.redd.it/5d15n56js2h01.jpg"></div></div>
+						<div class="col-md-7">
+							<div class="card_content"><a href="">Победитель конкурса самоделок THE MAKUTA...</a></div>
+							<div class="dd">
+								<div class="card_items">11.20.2020</div>
+								<div class="card_items"><i class="material-icons" style="color: blue; font-size:25px">bookmark</i><a href="#"> Галерея</a></div>
+								<div class="card_items">by Alfawin</div>
+							</div>
+							<div style=" margin-top: 15px;  display: block; color: #65656c; margin-left: 20px;">
+								Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал
+							</div>
+						</div>
+					</div>
+				</div>
 
-
-  <script type="text/javascript">
-    var delay_popup = 1000;
-    setTimeout("document.getElementById('overlay').style.display='block'", delay_popup);
-  </script>
-
-    <script type="text/javascript">
-      function searchToggle(obj, evt){
-    var container = $(obj).closest('.search-wrapper');
-        if(!container.hasClass('active')){
-            container.addClass('active');
-            evt.preventDefault();
-        }
-        else if(container.hasClass('active') && $(obj).closest('.input-holder').length == 0){
-            container.removeClass('active');
-            // clear input
-            container.find('.search-input').val('');
-        }
-}</script>
-
-  <script>
-    function myFunction() {
-        var x = document.getElementById("myTopnav");
-        if (x.className === "topnav") {
-            x.className += " responsive";
+				<div class="item">
+					<div class="row">
+						<div class="col-md-5"><i class="fa fa-youtube-play" style="margin: 18px; position: absolute; float: right; font-size:36px; color: #e02828;"></i>
+					<div class="image"><img id="card_img" width="350" height="250" src="https://lh3.googleusercontent.com/proxy/dGR0VOJB8aso8w8ZzssxlHp3idPJFpLHsj0s3NCU-sFKAJ23aqZl3QEhKYuC8csVRtJdT2LDmlYHaxxTL--W6unN1xVEppwnkUAkuggkuSqt1nnt___9AuC78fI0K8clANE0BiPlZjci6taLfMqMvXWVVhP4RE5Hgb6d2w"></div></div>
+						<div class="col-md-7">
+							<div class="card_content"><a href="">СКОРО! Стрим посвященный открытию... </a></div>
+							<div class="dd">
+								<div class="card_items">11.20.2020</div>
+								<div class="card_items"><i class="fa fa-users" style="font-size:24px; color: orange;" > </i><a style="color: gray;" href="#"> Комьюнити</a></div>
+								<div class="card_items">by Alfawin</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+  			<div id="side_bar" class="col-md-3">
+  				<br><br><br>
+  				<div class="stats">
+  					<div class="item2"><i class="fa fa-youtube-play" style=" font-size:20px"></i><a style="color: silver;"> 1487</a></div>
+  					<div class="item4"><i style='font-size:20px' class='fab fa-discord'></i><a style="color: silver;"> 97</a></div>
+  					<div class="item3"><i class="fa fa-vk" style="font-size:20px"></i><a style="color: silver;"> 15043</a></div>
+  				</div>
+  				<br>
+  				<div class="main_bar">
+  					<h5>КАТЕГОРИИ</h5>
+  					<div class="border_grad"></div>
+  					<div style="background: #1b1e21;">
+  					<br><br><br><br><br><br><br>
+  					<div class="categorie_links"><i class="fa fa-users" style=" color: orange; font-size:24px"> </i><a href="#"> КОМЬЮНИТИ</a></div><br><br><br>
+  					<div class="categorie_links"><i class="fa fa-wpforms" style="color: yellow; font-size:24px"></i><a href="#"> СТAТЬИ</a></div><br><br>
+  					<div class="categorie_links"><i class="fa fa-bank" style="color: lime; font-size:24px"></i><a href="#"> ДОСКА ПОЧЕТА</a></div><br><br>
+  					<div class="categorie_links"><i class="material-icons" style="color: blue; font-size:30px">bookmark</i><a href="#"> ГАЛЕРЕЯ</a></div><br><br>
+  					<div class="categorie_links"><i class="material-icons" style="color: magenta; font-size:36px">equalizer</i><a href="#"> ПРОЧЕЕ</a></div><br><br>
+  					</div>
+  				</div><span class="glyphicon glyphicon-king"></span>
+  				<br>
+  				<div class="main_bar">
+  					<h5>АКТУАЛЬНЫЕ НОВОСТИ</h5>
+  					<div class="border_grad"></div>
+  					<div style="background: #1b1e21;">
+  					<br><br><br><br><br><br><br>
+  						<div class="news">
+  							<div class="news_links">
+  							<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/LEGO_logo.svg/600px-LEGO_logo.svg.png" width="60" height="60"> Компания Lego проводит конкурс...
+  							</div>
+  							<div class="news_links">
+  							<img src="https://cdn.discordapp.com/attachments/466314747281801228/676782114594619402/unknown.png" width="60" height="60"> Новый мок от BobThe Doctor27...
+  							</div>
+  							<div class="news_links">
+  							<img src="https://cdn.discordapp.com/attachments/466314747281801228/676782114594619402/unknown.png" width="60" height="60"> Новый мок от BobThe Doctor27...
+  							</div>
+  							<div class="news_links">
+  							<img src="https://cdn.discordapp.com/attachments/466314747281801228/676782114594619402/unknown.png" width="60" height="60"> Новый мок от BobThe Doctor27...
+  							</div>
+  						</div>
+  					</div>
+  				</div>
+  			</div>
+		</div>
+	</div>
+<script type="text/javascript">
+	$(document).ready(function(){
+    $("#showHideContent").click(function () {
+        if ($("#content").is(":hidden")) {
+            $("#content").show("slow");
         } else {
-            x.className = "topnav";
+            $("#content").hide("slow");
         }
-    }
-  </script>
-    </div>
-  </body>
-  </html>
+        return false;
+    });
+});
+</script>
+</body>
+</html>
+
+<!--<br><br><span id="stats">15032</span> 
+  				<div id="shadowBox">
+    				<p class="rainbow rainbow_text_animated">14802</p>
+				</div>
+				<span class="pulse"></span>
+				<span class="pulse"></span>
+				<span class="pulse"></span><i style='font-size:20px' class='fab fa-discord'></i>
+				<i class="fa fa-discord" aria-hidden="true"></i>
+				<i class="fab fa-discord"></i>-->
