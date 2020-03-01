@@ -1,166 +1,258 @@
+
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+<link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/mr-pixel" type="text/css"/>
+
+<header class="header" style="position: fixed;">
+    <a href="" class="logo"><h1 style="font-size: 30; margin-top: 7px; font-family: 'Press Start 2P'">TAYANAR</h1></a>
+    <input class="menu-btn" type="checkbox" id="menu-btn" />
+    <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <ul class="menu">
+            <li><a href="#work">Our Work</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#careers">Careers</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><h href=""><img src="https://img.pngio.com/png-avatar-108-images-in-collection-page-3-png-avatar-300_300.png" style="border-radius: 50%; margin: 10px; width: 45px; height: 45px; border: 2px solid #7b75ff;"></h></li>
+        </ul>
+</header>
+
+<style type="text/css">
+    @import url('https://fonts.googleapis.com/css?family=Anton&display=swap');
+    @import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
+  body {
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+  background-color: #f4f4f4;
+}
+
+a {
+  color: white;
+}
+
+/* header */
+.back {
+    background: #5e5ed3;
+    width: 100%;
+    height: 500px;
+    margin-top: 0px;
+}
+.header {
+  background-color: #7b75ff;
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+  position: fixed;
+  width: 100%;
+  z-index: 30;
+  height: 65px;
+}
+
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: #7b75ff;
+}
+
+.header li a {
+  display: block;
+  padding: 20px 20px;
+  text-decoration: none;
+  color: white;
+}
+
+.header li a:hover,
+.header .menu-btn:hover {
+  background-color: #5e5ed3;
+  color: white;
+}
+
+.header .logo {
+  display: block;
+  float: left;
+  font-size: 2em;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: white;
+}
+
+.header:hover {
+    color: silver;
+}
+
+/* menu */
+
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+}
+
+/* menu icon */
+
+.header .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+
+.header .menu-icon .navicon {
+  background: #333;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: #333;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+  top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+  top: -5px;
+}
+
+/* menu btn */
+
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+/* 48em = 768px */
+
+@media (min-width: 48em) {
+  .header li {
+    float: left;
+  }
+  .header li a {
+    padding: 20px 30px;
+  }
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .header .menu-icon {
+    display: none;
+  }
+}
+
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lilita+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lalezar|Source+Sans+Pro&display=swap');
+
+</style>
 <!DOCTYPE html>
 <html>
 <head>
-	<title>bioproj</title>
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.2.3/jquery.min.js"></script>
-	<meta name='viewport' content='width=device-width, initial-scale=1'>
-	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>home</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </head>
 <body>
-	<div class="naw">
-		<div class="container">
-			<div class="logo"><img width="100" height="60" src="Three_Virtues_Silhouette.png">
-			<o class="menu">
-				<a href="#" style="margin-left: 5%;">VK</a>
-				<a href="#" style="margin-left: 2%;">RUSBIONICLE</a>
-				<a href="#" style="margin-left: 2%;">RBACH</a>
-				<a href="#" style="margin-left: 2%;">OTHER</a>
-			</o>
-			</div>
-			
-			<div class="auth">
-				
-				<a class="auth_link" href="#">Sing up</a> <a class="auth_link" href="#">ᅠSing up</a>
-			</div>
-		</div>
-		<i id="showHideContent"><i class="material-icons" style="font-size:36px" id="hov">apps</i></i>
-		<div id="content" style="display:none;">
-			<a id="links" href="#">Rbach</a><br>
-			<a id="links" href="#">RB</a><br>
-			<a id="links" href="#">VK</a><br>
-			<a id="links" href="#">Discord</a><br>
-		</div>
-	</div>
-	<div class="container">
-		<div class="row">
-			<div id="content_main" class="col-md-9">
-				<br><br>
-				<div class="back_content">
-					
-				</div>
-				<marquee behavior="scroll" id="marquee" direction="left">Вступайде в наше сообщество фанатов Бионикл прямо сейчас! Свежые новости, самоделки, анонсы и многое другое ждет вас в нашей группе!</marquee>
+    
+  f
+<div class="back"><br><br><div style="font-family: 'Anton', ; text-align: center; color: white; margin-top: 2%;"><h2>TAYANAR - IT blog, reviews, guide and other :D</h2><p style="color: silver;">IT blog, reviews, guide and other</p></div>
+</div>
 
-				<div class="item">
-					<div class="row">
-						<div class="col-md-5"><i class="fa fa-youtube-play" style="margin: 18px; position: absolute; float: right; font-size:36px; color: #e02828;"></i>
-					<div class="image"><img id="card_img" width="350" height="250" src="https://i.ytimg.com/vi/pyH_3d3PzTM/maxresdefault.jpg"></div></div>
-						<div class="col-md-7">
-							<div class="card_content"><a href="">СКОРО! Стрим посвященный открытию... </a></div>
-							<div class="dd">
-								<div class="card_items">11.20.2020</div>
-								<div class="card_items"><i class="fa fa-users" style="font-size:24px; color: orange;" > </i><a style="color: gray;" href="#"> Комьюнити</a></div>
-								<div class="card_items">by Alfawin</div>
-							</div>
-							<div style=" margin-top: 15px;  display: block; color: #65656c; margin-left: 20px;">
-								Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал
-							</div>
-						</div>
-					</div>
-				</div>
-				
-				<div class="item">
-					<div class="row">
-						<div class="col-md-5"><i class="fa fa-vk" style="margin: 18px; position: absolute; float: right; font-size:36px; color: #6d12cc;"></i>
-					<div class="image"><img id="card_img" width="350" height="250" src="https://i.redd.it/5d15n56js2h01.jpg"></div></div>
-						<div class="col-md-7">
-							<div class="card_content"><a href="">Победитель конкурса самоделок THE MAKUTA...</a></div>
-							<div class="dd">
-								<div class="card_items">11.20.2020</div>
-								<div class="card_items"><i class="material-icons" style="color: blue; font-size:25px">bookmark</i><a href="#"> Галерея</a></div>
-								<div class="card_items">by Alfawin</div>
-							</div>
-							<div style=" margin-top: 15px;  display: block; color: #65656c; margin-left: 20px;">
-								Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал
-							</div>
-						</div>
-					</div>
-				</div>
+<div class="container">
+    <center><img style="margin-top: -350px;" src="https://cdn.discordapp.com/attachments/466314747281801228/683649929339601012/npc3b2.png"></center>
 
-				<div class="item">
-					<div class="row">
-						<div class="col-md-5"><i class="fa fa-youtube-play" style="margin: 18px; position: absolute; float: right; font-size:36px; color: #e02828;"></i>
-					<div class="image"><img id="card_img" width="350" height="250" src="https://lh3.googleusercontent.com/proxy/dGR0VOJB8aso8w8ZzssxlHp3idPJFpLHsj0s3NCU-sFKAJ23aqZl3QEhKYuC8csVRtJdT2LDmlYHaxxTL--W6unN1xVEppwnkUAkuggkuSqt1nnt___9AuC78fI0K8clANE0BiPlZjci6taLfMqMvXWVVhP4RE5Hgb6d2w"></div></div>
-						<div class="col-md-7">
-							<div class="card_content"><a href="">СКОРО! Стрим посвященный открытию... </a></div>
-							<div class="dd">
-								<div class="card_items">11.20.2020</div>
-								<div class="card_items"><i class="fa fa-users" style="font-size:24px; color: orange;" > </i><a style="color: gray;" href="#"> Комьюнити</a></div>
-								<div class="card_items">by Alfawin</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-  			<div id="side_bar" class="col-md-3">
-  				<br><br><br>
-  				<div class="stats">
-  					<div class="item2"><i class="fa fa-youtube-play" style=" font-size:20px"></i><a style="color: silver;"> 1487</a></div>
-  					<div class="item4"><i style='font-size:20px' class='fab fa-discord'></i><a style="color: silver;"> 97</a></div>
-  					<div class="item3"><i class="fa fa-vk" style="font-size:20px"></i><a style="color: silver;"> 15043</a></div>
-  				</div>
-  				<br>
-  				<div class="main_bar">
-  					<h5>КАТЕГОРИИ</h5>
-  					<div class="border_grad"></div>
-  					<div style="background: #1b1e21;">
-  					<br><br><br><br><br><br><br>
-  					<div class="categorie_links"><i class="fa fa-users" style=" color: orange; font-size:24px"> </i><a href="#"> КОМЬЮНИТИ</a></div><br><br><br>
-  					<div class="categorie_links"><i class="fa fa-wpforms" style="color: yellow; font-size:24px"></i><a href="#"> СТAТЬИ</a></div><br><br>
-  					<div class="categorie_links"><i class="fa fa-bank" style="color: lime; font-size:24px"></i><a href="#"> ДОСКА ПОЧЕТА</a></div><br><br>
-  					<div class="categorie_links"><i class="material-icons" style="color: blue; font-size:30px">bookmark</i><a href="#"> ГАЛЕРЕЯ</a></div><br><br>
-  					<div class="categorie_links"><i class="material-icons" style="color: magenta; font-size:36px">equalizer</i><a href="#"> ПРОЧЕЕ</a></div><br><br>
-  					</div>
-  				</div><span class="glyphicon glyphicon-king"></span>
-  				<br>
-  				<div class="main_bar">
-  					<h5>АКТУАЛЬНЫЕ НОВОСТИ</h5>
-  					<div class="border_grad"></div>
-  					<div style="background: #1b1e21;">
-  					<br><br><br><br><br><br><br>
-  						<div class="news">
-  							<div class="news_links">
-  							<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/LEGO_logo.svg/600px-LEGO_logo.svg.png" width="60" height="60"> Компания Lego проводит конкурс...
-  							</div>
-  							<div class="news_links">
-  							<img src="https://cdn.discordapp.com/attachments/466314747281801228/676782114594619402/unknown.png" width="60" height="60"> Новый мок от BobThe Doctor27...
-  							</div>
-  							<div class="news_links">
-  							<img src="https://cdn.discordapp.com/attachments/466314747281801228/676782114594619402/unknown.png" width="60" height="60"> Новый мок от BobThe Doctor27...
-  							</div>
-  							<div class="news_links">
-  							<img src="https://cdn.discordapp.com/attachments/466314747281801228/676782114594619402/unknown.png" width="60" height="60"> Новый мок от BobThe Doctor27...
-  							</div>
-  						</div>
-  					</div>
-  				</div>
-  			</div>
-		</div>
-	</div>
-<script type="text/javascript">
-	$(document).ready(function(){
-    $("#showHideContent").click(function () {
-        if ($("#content").is(":hidden")) {
-            $("#content").show("slow");
-        } else {
-            $("#content").hide("slow");
-        }
-        return false;
-    });
-});
-</script>
+    <div class="col-md">
+      <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col-auto d-none d-lg-block">
+          <img width="300" height="230" src="https://img-it.ru/wp-content/uploads/2015/04/web3602.png">
+        </div>
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-primary">World</strong>
+          <h3 class="mb-0">Featured post</h3>
+          <div class="mb-1 text-muted">Nov 12</div>
+          <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+          <a href="#" class="stretched-link">Continue reading</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md">
+      <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col-auto d-none d-lg-block">
+          <img width="300" height="230" src="https://s.dou.ua/img/announces/420a_11.jpg">
+        </div>
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-primary">World</strong>
+          <h3 class="mb-0">Featured post</h3>
+          <div class="mb-1 text-muted">Nov 12</div>
+          <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+          <a href="#" class="stretched-link">Continue reading</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md">
+      <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col-auto d-none d-lg-block">
+          <img width="300" height="230" src="https://img-it.ru/wp-content/uploads/2015/04/web3602.png">
+        </div>
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-primary">World</strong>
+          <h3 class="mb-0">Featured post</h3>
+          <div class="mb-1 text-muted">Nov 12</div>
+          <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+          <a href="#" class="stretched-link">Continue reading</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md">
+      <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col-auto d-none d-lg-block">
+          <img width="300" height="230" src="https://img-it.ru/wp-content/uploads/2015/04/web3602.png">
+        </div>
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-primary">World</strong>
+          <h3 class="mb-0">Featured post</h3>
+          <div class="mb-1 text-muted">Nov 12</div>
+          <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+          <a href="#" class="stretched-link">Continue reading</a>
+        </div>
+      </div>
+    </div>
+    
+</div>
 </body>
 </html>
-
-<!--<br><br><span id="stats">15032</span> 
-  				<div id="shadowBox">
-    				<p class="rainbow rainbow_text_animated">14802</p>
-				</div>
-				<span class="pulse"></span>
-				<span class="pulse"></span>
-				<span class="pulse"></span><i style='font-size:20px' class='fab fa-discord'></i>
-				<i class="fa fa-discord" aria-hidden="true"></i>
-				<i class="fab fa-discord"></i>-->
