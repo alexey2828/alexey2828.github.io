@@ -49,6 +49,10 @@ html, body { margin: 0; padding: 0; }
 	max-width: 1280px;
 	margin: auto;
 }
+.sing {
+	float: right;
+	margin-top: -25px;
+}
 .logo {
 	font-family: 'Oswald', sans-serif;
 	font-size: 25px;
