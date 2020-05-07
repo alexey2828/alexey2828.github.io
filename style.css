@@ -1,86 +1,405 @@
-html, body, {
-	margin: 0px;
+
+#preloader {
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 999;
+	width: 100%;
+	height: 100%;
+	overflow: visible;
+	background: black url('//cdnjs.cloudflare.com/ajax/libs/file-uploader/3.7.0/processing.gif') no-repeat center center;
+}
+    
+.visible {
+	visibility: visible;
+	opacity: 1;
+	transition: opacity 2s linear;
 }
 
-::-webkit-scrollbar { width: 3px; height: 10px;}
-::-webkit-scrollbar-button {  background-color: #666; }
-::-webkit-scrollbar-track {  background-color: #999;}
-::-webkit-scrollbar-track-piece { background-color: gray;}
-::-webkit-scrollbar-thumb { height: 50px; background-color: #666; border-radius: 3px;}
-::-webkit-scrollbar-corner { background-color: #999;}}
-::-webkit-resizer { background-color: #666;}
+.hidden {
+ 	visibility: hidden;
+ 	opacity: 0;
+ 	transition: visibility 0s 2s, opacity 2s linear;
+}
 
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap');
+html, body { margin: 0; padding: 0; }
+
+::-webkit-scrollbar{ width: 16px; /* 1 - вертикальный скроллбар */}
+::-webkit-scrollbar:horizontal{ height: 10px; /* 1 - горизонтальный скроллбар */}
+::-webkit-scrollbar-button {background: #0c1013; /* 2 - кнопка */}
+::-webkit-scrollbar-track {background: #0c1013;/* 3 - трек */}
+::-webkit-scrollbar-track-piece { background: #0c1013; /* 4 – видимая часть трека */ }
+::-webkit-scrollbar-thumb {background: #2a2d30; border-radius: 10px; -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); /* 5 - ползунок */}
 .wrapper {
+	margin: 0;
 	color: white;
 }
-
-.map {
-	margin-top: 2%;
-	overflow-y: scroll;
-    width: 100%;
-    height: 540px; 
-    padding: 5px;
-    position: absolute;
-}
-
-.buttons {
+.menu {
 	width: 100%;
-	height: 100px;
-	background: black;
-	position: fixed;
-	z-index: 99;
-	margin-top: 40%;
+	background: #0c1013;
+	height: 60px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.container_menu {
+	max-width: 1280px;
+	margin: auto;
+}
+.logo {
+	font-family: 'Oswald', sans-serif;
+	font-size: 25px;
+}
+.container {
+	max-width: 1280px;
+	
+	margin: auto;
+}
+.col-md-3 {
+	background: #1f2326;
+	height: auto;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	width: 100%;
+}
+.categories {
+	margin-top: 50px;
+	text-align:left;
+}
+#bottom {
+	width: 27%;
+	height: 5px;
+	background-image: linear-gradient(90deg, #8b24c6, #d51aeb);
+}
+#categorie_link {
+	margin-top: 15px;
+	margin-left: 5px; 
+	position: absolute; 
+	font-family: 'Oswald', sans-serif; 
+	font-size: 20px; 
+	color: #cfcfcf; 
+}
+#categorie_link:hover {
+	color: white; 
+}
+.last_topic {
+	display: flex;
+}
+#img_avatar {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+}
+.topic_content {
+
+}
+.title {
+	margin-left: 10px;
+}
+.topic_txt {
+	color:#7e8082;
+	font-size: 12px;
+}
+.categorie_view {
+	border-left: 5px solid green;
+	font-size: 14px;
+	color: silver;
+	font-family: 'Oswald', sans-serif;
+}
+.bottom_topic {
+	margin-top: 10px;
+	border-bottom: 2px solid #292e32;
+	width:90%;
+	margin: auto;
+}
+@media (max-width: 62em) {
+.col-md-3 {
+	display: none;
+}
 }
 
-@font-face {
-  font-family: 'Minecraft';
-  src: url('http://charliecowan.co.uk/mcbuttongenerator/fonts/mcfont.eot');
-  src: url('http://charliecowan.co.uk/mcbuttongenerator/fonts/mcfont.eot?#iefix') format('embedded-opentype'),
-       url('http://charliecowan.co.uk/mcbuttongenerator/fonts/mcfont.woff') format('woff'),
-       url('http://charliecowan.co.uk/mcbuttongenerator/fonts/mcfont.ttf')  format('truetype'),
-       url('http://charliecowan.co.uk/mcbuttongenerator/fonts/mcfont.svg#svgFontName') format('svg');
+
+
+
+.item {
+	margin-top: 30px;
+	margin-left: 0px;
+	font-family: 'Oswald', sans-serif;
+
+}
+#stats {
+	margin-top: -10px;
+	margin-left: 20px;
+	font-family: 'Oswald', sans-serif;
+	position: absolute;
+}
+#stats_txt {
+	margin-top: 10px;
+	margin-left: 5px;
+	position: absolute;
+	font-family: 'Lato', sans-serif;
+	font-size: 14px;
+	color: #51575d;
+}
+.pinkBg {
+    background-color: #ed184f!important;
+    background-image: linear-gradient(90deg, #fd5581, #fd8b55);
+}
+.intro-banner-vdo-play-btn{
+    height:12px;
+    width:12px;
+    position:absolute;
+
+    margin: 0;
+    border-radius:100px;
+    z-index:1
+}
+.intro-banner-vdo-play-btn i{
+    line-height:56px;
+    font-size:30px
+}
+.intro-banner-vdo-play-btn .ripple{
+    position:absolute;
+    width:40px;
+    height:40px;
+    z-index:-1;
+  
+    opacity:0;
+    margin-top:-14px;
+    margin-left: -14px;
+    border-radius:100px;
+    -webkit-animation:ripple 1.6s infinite;
+    animation:ripple 1.6s infinite
 }
 
-.button {
-  height: 40px;
-  width: 90px;
-  outline: 2px solid black;
-  position: relative;
-  margin: 0;
-  display: inline-block;
-  background-image: url('http://charliecowan.co.uk/mcbuttongenerator/button_center.png');
-  background-repeat: repeat;
-  padding: 0;
-  font-family: Minecraft;
-  text-align: center;
-  color: white;
-  text-shadow: 3px 3px #4C4C4C;
-  border-bottom: 4px solid #565656;
-  border-right: 2px solid #565656;
-  border-left: 2px solid #AAA;
-  border-top: 2px solid #AAA;
-  box-sizing: border-box;
-  font-size: 16px;
+@-webkit-keyframes ripple{
+    0%{
+        opacity:1;
+        -webkit-transform:scale(0);
+        transform:scale(0)
+    }
+    100%{
+        opacity:0;
+        -webkit-transform:scale(1);
+        transform:scale(1)
+    }
+}
+@keyframes ripple{
+    0%{
+        opacity:1;
+        -webkit-transform:scale(0);
+        transform:scale(0)
+    }
+    100%{
+        opacity:0;
+        -webkit-transform:scale(1);
+        transform:scale(1)
+    }
+}
+.intro-banner-vdo-play-btn .ripple:nth-child(2){
+    animation-delay:.3s;
+    -webkit-animation-delay:.3s
+}
+.intro-banner-vdo-play-btn .ripple:nth-child(3){
+    animation-delay:.6s;
+    -webkit-animation-delay:.6s
 }
 
-.button span {
-  position: relative;
-  line-height: 40px;
-  bottom: 3px;
+
+
+.pinkBg2 {
+    background-color: #ed184f!important;
+    background-image: linear-gradient(90deg, #9b920a, #fff000);
+}
+.intro-banner-vdo-play-btn2{
+    height:12px;
+    width:12px;
+    position:absolute;
+
+    margin: 0;
+    border-radius:100px;
+    z-index:1
+}
+.intro-banner-vdo-play-btn2 i{
+    line-height:56px;
+    font-size:30px
+}
+.intro-banner-vdo-play-btn2 .ripple2{
+    position:absolute;
+    width:40px;
+    height:40px;
+    z-index:-1;
+  
+    opacity:0;
+    margin-top:-14px;
+    margin-left: -14px;
+    border-radius:100px;
+    -webkit-animation:ripple2 1.7s infinite;
+    animation:ripple2 1.7s infinite
 }
 
-.button:hover {
-  border-bottom: 4px solid #59639A;
-  border-right: 2px solid #59639A;
-  border-left: 2px solid #BDC6FF;
-  border-top: 2px solid #BDC6FF;
-  background-image: url('http://charliecowan.co.uk/mcbuttongenerator/button_active_center.png');
-  color: #FFFFA0;
+@-webkit-keyframes ripple2{
+    0%{
+        opacity:1;
+        -webkit-transform:scale(0);
+        transform:scale(0)
+    }
+    100%{
+        opacity:0;
+        -webkit-transform:scale(1);
+        transform:scale(1)
+    }
+}
+@keyframes ripple2{
+    0%{
+        opacity:1;
+        -webkit-transform:scale(0);
+        transform:scale(0)
+    }
+    100%{
+        opacity:0;
+        -webkit-transform:scale(1);
+        transform:scale(1)
+    }
+}
+.intro-banner-vdo-play-btn2 .ripple2:nth-child(2){
+    animation-delay:.3s;
+    -webkit-animation-delay:.3s
+}
+.intro-banner-vdo-play-btn2 .ripple2:nth-child(3){
+    animation-delay:.6s;
+    -webkit-animation-delay:.6s
 }
 
-@media only screen and (max-width: 780px) {
-	.buttons {
 
-	margin-top: 95%;
+.pinkBg3 {
+    background-color: #ed184f!important;
+    background-image: linear-gradient(90deg, #298b12, #44c127);
 }
+.intro-banner-vdo-play-btn3{
+    height:12px;
+    width:12px;
+    position:absolute;
+
+    margin: 0;
+    border-radius:100px;
+    z-index:1
+}
+.intro-banner-vdo-play-btn3 i{
+    line-height:56px;
+    font-size:30px
+}
+.intro-banner-vdo-play-btn3 .ripple3{
+    position:absolute;
+    width:40px;
+    height:40px;
+    z-index:-1;
+  
+    opacity:0;
+    margin-top:-14px;
+    margin-left: -14px;
+    border-radius:100px;
+    -webkit-animation:ripple3 1.5s infinite;
+    animation:ripple3 1.5s infinite
+}
+
+@-webkit-keyframes ripple3{
+    0%{
+        opacity:1;
+        -webkit-transform:scale(0);
+        transform:scale(0)
+    }
+    100%{
+        opacity:0;
+        -webkit-transform:scale(1);
+        transform:scale(1)
+    }
+}
+@keyframes ripple3{
+    0%{
+        opacity:1;
+        -webkit-transform:scale(0);
+        transform:scale(0)
+    }
+    100%{
+        opacity:0;
+        -webkit-transform:scale(1);
+        transform:scale(1)
+    }
+}
+.intro-banner-vdo-play-btn3 .ripple3:nth-child(2){
+    animation-delay:.3s;
+    -webkit-animation-delay:.3s
+}
+.intro-banner-vdo-play-btn3 .ripple3:nth-child(3){
+    animation-delay:.6s;
+    -webkit-animation-delay:.6s
+}
+
+
+
+.pinkBg4 {
+    background-color: #ed184f!important;
+    background-image: linear-gradient(90deg, #0b1dc2, #5d6bf2);
+}
+.intro-banner-vdo-play-btn4{
+    height:12px;
+    width:12px;
+    position:absolute;
+
+    margin: 0;
+    border-radius:100px;
+    z-index:1
+}
+.intro-banner-vdo-play-btn4 i{
+    line-height:56px;
+    font-size:30px
+}
+.intro-banner-vdo-play-btn4 .ripple4{
+    position:absolute;
+    width:40px;
+    height:40px;
+    z-index:-1;
+  
+    opacity:0;
+    margin-top:-14px;
+    margin-left: -14px;
+    border-radius:100px;
+    -webkit-animation:ripple4 1.8s infinite;
+    animation:ripple4 1.8s infinite
+}
+
+@-webkit-keyframes ripple4{
+    0%{
+        opacity:1;
+        -webkit-transform:scale(0);
+        transform:scale(0)
+    }
+    100%{
+        opacity:0;
+        -webkit-transform:scale(1);
+        transform:scale(1)
+    }
+}
+@keyframes ripple4{
+    0%{
+        opacity:1;
+        -webkit-transform:scale(0);
+        transform:scale(0)
+    }
+    100%{
+        opacity:0;
+        -webkit-transform:scale(1);
+        transform:scale(1)
+    }
+}
+.intro-banner-vdo-play-btn4 .ripple4:nth-child(2){
+    animation-delay:.3s;
+    -webkit-animation-delay:.3s
+}
+.intro-banner-vdo-play-btn4 .ripple4:nth-child(3){
+    animation-delay:.6s;
+    -webkit-animation-delay:.6s
 }

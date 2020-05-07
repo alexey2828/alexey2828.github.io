@@ -1,44 +1,233 @@
+<div id="preloader" class="visible"></div>
 <!DOCTYPE html>
 <html>
-<head><meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="utf-8">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<title>Map</title>
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<head>
+	<title></title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
-<body>
+<body style="background-color: #14171a;">
+	<div class="wrapper">
+		<div class="menu">
+			<div class="container_menu">
+				<div class="logo"><img style="margin-top: 10px;" width="40" height="40" src="https://res.cloudinary.com/teepublic/image/private/s--zgLyJzov--/t_Preview/b_rgb:191919,c_limit,f_jpg,h_630,q_90,w_630/v1469223875/production/designs/596887_1.jpg"><h style="margin-left: 10px; margin-top: 10px; position: absolute;">BiONICLE PROJ</h></div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-9">
+					<h style="color:#7e8082; margin-top: 15px; position: absolute; font-size: 15px;">Topic</h>
 
-<style type="text/css">
-	body{
-    	background-color: black;
-   	} 
-</style>
-<div class="wrapper">
-	<div class="map">
-		<div>gg</div>
-		<div>gg</div>
-		<img src="export_7.png">
-	</div>
-	<br>
-	<div class="container">
-		<center>
-		<div class="buttons">
-			<div style="position: flex;">
-				<div class="button" style="width: 110px; ">
-    				<span>Дома игроков</span>
+
 				</div>
-				<div style="margin-left: 20px;" class="button">
-    				<span>Click me!</span>
-				</div>
-				<div style="margin-left: 20px;" class="button">
-    				<span>Click me!</span>
+				<div class="col-md-3">
+					<div style="display: flex;">
+						<div class="item">
+								<a href="#" class="intro-banner-vdo-play-btn pinkBg" target="_blank">
+								<i class="glyphicon glyphicon-play whiteText" aria-hidden="true"></i>
+								<span class="ripple pinkBg"></span>
+								<span class="ripple pinkBg"></span>
+								<span class="ripple pinkBg"></span>
+								</a><h id="stats" style="color: #e14869;">234</h><h id="stats_txt">Топиков</h>
+						</div>
+						<div style="margin-left: 70px;" class="item">
+								<a href="#" class="intro-banner-vdo-play-btn2 pinkBg2" target="_blank2">
+								<i class="glyphicon glyphicon-play whiteText" aria-hidden="true"></i>
+								<span class="ripple2 pinkBg2"></span>
+								<span class="ripple2 pinkBg2"></span>
+								<span class="ripple2 pinkBg2"></span>
+								</a><h id="stats" style="color: #fff000;">58</h><h id="stats_txt">Статей</h>
+						</div>
+						<div style="margin-left: 70px;" class="item">
+								<a href="#" class="intro-banner-vdo-play-btn3 pinkBg3" target="_blank3">
+								<i class="glyphicon glyphicon-play whiteText" aria-hidden="true"></i>
+								<span class="ripple3 pinkBg3"></span>
+								<span class="ripple3 pinkBg3"></span>
+								<span class="ripple3 pinkBg3"></span>
+								</a><h id="stats" style="color: #44c127;">182</h><h id="stats_txt">Ответов</h>
+						</div>
+						<div style="margin-left: 70px;" class="item">
+								<a href="#" class="intro-banner-vdo-play-btn4 pinkBg4" target="_blank4">
+								<i class="glyphicon glyphicon-play whiteText" aria-hidden="true"></i>
+								<span class="ripple4 pinkBg4"></span>
+								<span class="ripple4 pinkBg4"></span>
+								<span class="ripple4 pinkBg4"></span>
+								</a><h id="stats" style="color: #5d6bf2;">42</h><h id="stats_txt">Юзеров</h>
+						</div>
+					</div>
+					<div class="categories">
+						<h style="font-family: 'Oswald', sans-serif; font-size: 20px; ">ФОРУМ</h>
+						<div id="bottom"></div>
+						<br>
+						<div class="last_topic">
+							<div class="avatar">
+								<img id="img_avatar" src="https://i.dlpng.com/static/png/6860651_preview.png">
+							</div>
+							<div class="topic_content">
+								<div class="title"> Йоу йоу пирака, хейтеры сос...
+									<div class="categorie_view">Bionicle</div>
+									<div class="topic_txt">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века...</div>
+								</div>
+								<div style="margin-top: 10px;" class="bottom_topic"></div>
+							</div>
+						</div>
+
+						<div class="last_topic" style="margin-top: 10px;">
+							<div class="avatar">
+								<img id="img_avatar" src="https://i.dlpng.com/static/png/6860651_preview.png">
+							</div>
+							<div class="topic_content">
+								<div class="title"> Йоу йоу пирака, хейтеры сос...
+									<div class="categorie_view">Bionicle</div>
+									<div class="topic_txt">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века...</div>
+								</div>
+								<div style="margin-top: 10px;" class="bottom_topic"></div>
+							</div>
+						</div>
+
+						<div class="last_topic" style="margin-top: 10px;">
+							<div class="avatar">
+								<img id="img_avatar" src="https://i.dlpng.com/static/png/6860651_preview.png">
+							</div>
+							<div class="topic_content">
+								<div class="title"> Йоу йоу пирака, хейтеры сос...
+									<div class="categorie_view">Bionicle</div>
+									<div class="topic_txt">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века...</div>
+								</div>
+								<div style="margin-top: 10px;" class="bottom_topic"></div>
+							</div>
+						</div>
+
+						<div class="last_topic" style="margin-top: 10px;">
+							<div class="avatar">
+								<img id="img_avatar" src="https://i.dlpng.com/static/png/6860651_preview.png">
+							</div>
+							<div class="topic_content">
+								<div class="title"> Йоу йоу пирака, хейтеры сос...
+									<div class="categorie_view">Bionicle</div>
+									<div class="topic_txt">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века...</div>
+								</div>
+								<div style="margin-top: 10px;" class="bottom_topic"></div>
+							</div>
+						</div>
+
+						<h style="font-family: 'Oswald', sans-serif; font-size: 20px; margin-top: 10px; ">СТАТЬИ</h>
+						<div id="bottom"></div>
+						<br>
+						<div class="last_topic" style="margin-top: 10px;">
+							<div class="avatar">
+								<img id="img_avatar" src="https://i.dlpng.com/static/png/6860651_preview.png">
+							</div>
+							<div class="topic_content">
+								<div class="title"> Йоу йоу пирака, хейтеры сос...
+									<div style="border-left: 5px solid #d51aeb;" class="categorie_view">WIKI</div>
+									<div class="topic_txt">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века...</div>
+								</div>
+								<div style="margin-top: 10px;" class="bottom_topic"></div>
+							</div>
+						</div>
+
+						<div class="last_topic" style="margin-top: 10px;">
+							<div class="avatar">
+								<img id="img_avatar" src="https://i.dlpng.com/static/png/6860651_preview.png">
+							</div>
+							<div class="topic_content">
+								<div class="title"> Йоу йоу пирака, хейтеры сос...
+									<div style="border-left: 5px solid #d51aeb;" class="categorie_view">WIKI</div>
+									<div class="topic_txt">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века...</div>
+								</div>
+								<div style="margin-top: 10px;" class="bottom_topic"></div>
+							</div>
+						</div>
+
+						<div class="last_topic" style="margin-top: 10px;">
+							<div class="avatar">
+								<img id="img_avatar" src="https://i.dlpng.com/static/png/6860651_preview.png">
+							</div>
+							<div class="topic_content">
+								<div class="title"> Йоу йоу пирака, хейтеры сос...
+									<div style="border-left: 5px solid #d51aeb;" class="categorie_view">WIKI</div>
+									<div class="topic_txt">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века...</div>
+								</div>
+								<div style="margin-top: 10px;" class="bottom_topic"></div>
+							</div>
+						</div>
+
+						<div class="last_topic" style="margin-top: 10px;">
+							<div class="avatar">
+								<img id="img_avatar" src="https://i.dlpng.com/static/png/6860651_preview.png">
+							</div>
+							<div class="topic_content">
+								<div class="title"> Йоу йоу пирака, хейтеры сос...
+									<div style="border-left: 5px solid #d51aeb;" class="categorie_view">WIKI</div>
+									<div class="topic_txt">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века...</div>
+								</div>
+								<div style="margin-top: 10px;" class="bottom_topic"></div>
+							</div>
+						</div>
+
+						<div class="last_topic" style="margin-top: 10px;">
+							<div class="avatar">
+								<img id="img_avatar" src="https://i.dlpng.com/static/png/6860651_preview.png">
+							</div>
+							<div class="topic_content">
+								<div class="title"> Йоу йоу пирака, хейтеры сос...
+									<div style="border-left: 5px solid #d51aeb;" class="categorie_view">WIKI</div>
+									<div class="topic_txt">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века...</div>
+								</div>
+								<div style="margin-top: 10px;" class="bottom_topic"></div>
+							</div>
+						</div>
+
+						<h style="font-family: 'Oswald', sans-serif; font-size: 20px; margin-top: 10px; ">НОВЫЕ ПОЛЬЗОВАТЕЛИ </h>
+						<div id="bottom" style="width: 84%;"></div>
+						<br>
+						<div class="last_topic" style="margin-top: 10px;">
+							<div class="avatar">
+								<img id="img_avatar" src="https://i.dlpng.com/static/png/6860651_preview.png">
+							</div>
+							<div class="title">Nickname
+								<div class="topic_txt">7 марта 2020</div>
+							</div>
+						</div>
+						<div style="margin-top: 10px;" class="bottom_topic"></div>
+						<div class="last_topic" style="margin-top: 10px;">
+							<div class="avatar">
+								<img id="img_avatar" src="https://i.dlpng.com/static/png/6860651_preview.png">
+							</div>
+							<div class="title">Nickname
+								<div class="topic_txt">7 марта 2020</div>
+							</div>
+						</div>
+						<div style="margin-top: 10px;" class="bottom_topic"></div>
+						<div class="last_topic" style="margin-top: 10px;">
+							<div class="avatar">
+								<img id="img_avatar" src="https://i.dlpng.com/static/png/6860651_preview.png">
+							</div>
+							<div class="title">Nickname
+								<div class="topic_txt">7 марта 2020</div>
+							</div>
+						</div>
+						<div style="margin-top: 10px;" class="bottom_topic"></div>
+					</div>
 				</div>
 			</div>
 		</div>
-		</center>
 	</div>
-</div>
-
 </body>
 </html>
+<script type="text/javascript">
+	function loadData() {
+  return new Promise((resolve, reject) => {
+    setTimeout(resolve, 200);
+  })
+}
+
+loadData()
+  .then(() => {
+    let preloaderEl = document.getElementById('preloader');
+    preloaderEl.classList.add('hidden');
+    preloaderEl.classList.remove('visible');
+  });
+</script>
