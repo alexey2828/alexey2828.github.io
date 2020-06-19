@@ -1,3 +1,4 @@
+<div id="preloader" class="visible"></div>
 <!DOCTYPE html>
 <html>
 <head>
@@ -19,9 +20,9 @@
     <input class="menu-btn" type="checkbox" id="menu-btn" />
     <label class="menu-icon" for="menu-btn"><span style="margin-left: -40px; margin-top: -20px;" class="navicon"></span></label>
         <ul class="menu" style="">
-            <li><a href="#work">About Me</a></li>
-            <li><a href="#about">Resume</a></li>
-            <li><a href="#careers">Portfolio</a></li>
+            <li><a href="index.html">About Me</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
             <li><a href="#contact">Contact</a></li>
             <li><a href="#contact">Other</a></li>
         </ul>
@@ -32,7 +33,7 @@
 		<div class="container-my">
 			<div class="row" style="margin-top: -60px">
 				<div class="col-md" >
-					<div class="avatar"><div class="ava"><img id="avatar" src="https://cdn.discordapp.com/attachments/630147183945056266/722736063390679100/unknown.png"></div></div>
+					<div class="avatar"><div class="ava"><img id="avatar" src="https://cdn.discordapp.com/attachments/630147183945056266/722733950153261086/unknown.png"></div></div>
 				</div>
 				<div class="col-md OK">
 					<div class="adaptive">
@@ -156,3 +157,20 @@
   interval: 20000
 })
 </script>
+<script type="text/javascript">
+	function loadData() {
+  return new Promise((resolve, reject) => {
+    setTimeout(resolve, 200);
+  })
+}
+
+loadData()
+  .then(() => {
+    let preloaderEl = document.getElementById('preloader');
+    preloaderEl.classList.add('hidden');
+    preloaderEl.classList.remove('visible');
+  });
+</script>
+
+
+

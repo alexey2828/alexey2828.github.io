@@ -1,0 +1,81 @@
+<div id="preloader" class="visible"></div>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+		  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+</head>
+<br>
+<header class="header">
+    <a href="index.html" class="logo"><h style="font-size: 20px; margin-left: 5px; color: white; margin-top: 0px; font-family: 'Noto Sans TC', sans-serif;"><img style="position: relative;margin-top: -8px;" src="https://cdn.discordapp.com/attachments/642355138006220838/722501293796622365/unknown.png"/> Alexey </h><h style="font-family: 'Lato', sans-serif; color: white; font-size: 20px;">Fomin<h></a>
+    <input class="menu-btn" type="checkbox" id="menu-btn" />
+    <label class="menu-icon" for="menu-btn"><span style="margin-left: -40px; margin-top: -20px;" class="navicon"></span></label>
+        <ul class="menu" style="">
+            <li><a href="index.html">About Me</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#contact">Other</a></li>
+        </ul>
+</header>
+<body style="background-color: #222222;">
+	<br><br>
+	<div class="head_resume">
+		<div class="container-my">
+			<h1 style="font-family: 'Noto Sans TC', sans-serif; color: white; margin-top: 50px; background: #252525; ">Portfolio</h1>
+		</div>
+	</div>
+	<div class="wrapper">
+		<div class="container-my"><br>
+			<h5 style="color: #767676; font-family: 'lato', sans-serif; ">Best</h5>
+			<div class="portfolio_content">
+				<center><br>
+				<div class="portfolio_item">
+				<img class="portfolio_item" width="100%" src="https://cdn.discordapp.com/attachments/723616276039204936/723616292220960808/site_1.png"></div><br>
+				<div class="portfolio_item">
+				<img class="portfolio_item" width="100%" src="https://cdn.discordapp.com/attachments/723616276039204936/723616305055268874/site_2.png"></div><br>
+				<div class="portfolio_item">
+				<img class="portfolio_item" width="100%" src="https://cdn.discordapp.com/attachments/723616276039204936/723616312865062952/site_3.png"></div>
+				</center>
+			</div>
+		</div>
+	</div>
+	<br><br><br>
+		<div class="footer">
+			<div class="footer_links">
+			<a id="links" href="#">Facebook</a>
+			<a id="links" style="margin-left: 15px;" href="#">Instagram</a>
+			<a id="links" style="margin-left: 15px;" href="#">LinkedIn</a>
+			</div>
+		</div>
+</body>
+</html>   	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script type="text/javascript">
+<script type="text/javascript">
+	$('.carousel').carousel({
+  interval: 20000
+})
+</script>
+<script type="text/javascript">
+	function loadData() {
+  return new Promise((resolve, reject) => {
+    setTimeout(resolve, 200);
+  })
+}
+
+loadData()
+  .then(() => {
+    let preloaderEl = document.getElementById('preloader');
+    preloaderEl.classList.add('hidden');
+    preloaderEl.classList.remove('visible');
+  });
+</script>
