@@ -1,5 +1,5 @@
 ﻿{
-	"version": 1598025530,
+	"version": 1598092648,
 	"fileList": [
 		"data.js",
 		"c2runtime.js",
@@ -32,11 +32,7 @@
 		"images/imgonlinecomuagifanimationbjnbppy7wis-sheet0.png",
 		"images/imgonlinecomuagifanimationbjnbppy7wis-sheet1.png",
 		"images/imgonlinecomuagifanimationbjnbppy7wis-sheet2.png",
-		"icon-16.png",
-		"icon-32.png",
-		"icon-114.png",
-		"icon-128.png",
-		"icon-256.png",
-		"loading-logo.png"
+		"images/sprite27-sheet0.png",
+		"images/sprite28-sheet0.png"
 	]
 }
