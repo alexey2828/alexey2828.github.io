@@ -1,5 +1,5 @@
 ﻿{
-	"version": 1598092648,
+	"version": 1598120457,
 	"fileList": [
 		"data.js",
 		"c2runtime.js",
@@ -18,6 +18,7 @@
 		"images/sprite14-sheet0.png",
 		"images/sprite15-sheet0.png",
 		"images/sprite15-sheet1.png",
+		"images/sprite15-sheet2.png",
 		"images/sprite16-sheet0.png",
 		"images/sceleton_topor-sheet0.png",
 		"images/sceleton_topor-sheet1.png",
@@ -33,6 +34,28 @@
 		"images/imgonlinecomuagifanimationbjnbppy7wis-sheet1.png",
 		"images/imgonlinecomuagifanimationbjnbppy7wis-sheet2.png",
 		"images/sprite27-sheet0.png",
-		"images/sprite28-sheet0.png"
+		"images/sprite28-sheet0.png",
+		"images/sprite29-sheet0.png",
+		"images/sprite31-sheet0.png",
+		"images/tiledbackground.png",
+		"images/sprite32-sheet0.png",
+		"images/key-sheet0.png",
+		"images/sprite33-sheet0.png",
+		"media/door-lock-3_zkwogmvd (online-audio-converter.com).m4a",
+		"media/door-lock-3_zkwogmvd (online-audio-converter.com).ogg",
+		"media/03844 (online-audio-converter.com).m4a",
+		"media/03844 (online-audio-converter.com).ogg",
+		"media/your_file_(tools.diktorov.net) (2).m4a",
+		"media/your_file_(tools.diktorov.net) (2).ogg",
+		"media/your_file_(tools.diktorov.net) (3).m4a",
+		"media/your_file_(tools.diktorov.net) (3).ogg",
+		"media/10571 (online-audio-converter.com).m4a",
+		"media/10571 (online-audio-converter.com).ogg",
+		"media/10 - terrain - grass (online-audio-converter.com).m4a",
+		"media/10 - terrain - grass (online-audio-converter.com).ogg",
+		"media/11 - terrain - lava (online-audio-converter.com).m4a",
+		"media/11 - terrain - lava (online-audio-converter.com).ogg",
+		"media/vspyshka-plameni_[pro-sound.org].m4a",
+		"media/vspyshka-plameni_[pro-sound.org].ogg"
 	]
 }

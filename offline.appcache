@@ -1,5 +1,5 @@
 ﻿CACHE MANIFEST
-#1598092648
+#1598120457
 data.js
 c2runtime.js
 jquery-2.1.1.min.js
@@ -17,6 +17,7 @@ images/sprite10-sheet0.png
 images/sprite14-sheet0.png
 images/sprite15-sheet0.png
 images/sprite15-sheet1.png
+images/sprite15-sheet2.png
 images/sprite16-sheet0.png
 images/sceleton_topor-sheet0.png
 images/sceleton_topor-sheet1.png
@@ -33,5 +34,27 @@ images/imgonlinecomuagifanimationbjnbppy7wis-sheet1.png
 images/imgonlinecomuagifanimationbjnbppy7wis-sheet2.png
 images/sprite27-sheet0.png
 images/sprite28-sheet0.png
+images/sprite29-sheet0.png
+images/sprite31-sheet0.png
+images/tiledbackground.png
+images/sprite32-sheet0.png
+images/key-sheet0.png
+images/sprite33-sheet0.png
+media/door-lock-3_zkwogmvd%20(online-audio-converter.com).m4a
+media/door-lock-3_zkwogmvd%20(online-audio-converter.com).ogg
+media/03844%20(online-audio-converter.com).m4a
+media/03844%20(online-audio-converter.com).ogg
+media/your_file_(tools.diktorov.net)%20(2).m4a
+media/your_file_(tools.diktorov.net)%20(2).ogg
+media/your_file_(tools.diktorov.net)%20(3).m4a
+media/your_file_(tools.diktorov.net)%20(3).ogg
+media/10571%20(online-audio-converter.com).m4a
+media/10571%20(online-audio-converter.com).ogg
+media/10%20-%20terrain%20-%20grass%20(online-audio-converter.com).m4a
+media/10%20-%20terrain%20-%20grass%20(online-audio-converter.com).ogg
+media/11%20-%20terrain%20-%20lava%20(online-audio-converter.com).m4a
+media/11%20-%20terrain%20-%20lava%20(online-audio-converter.com).ogg
+media/vspyshka-plameni_[pro-sound.org].m4a
+media/vspyshka-plameni_[pro-sound.org].ogg
 NETWORK:
 *
