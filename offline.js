@@ -1,5 +1,5 @@
 ﻿{
-	"version": 1598120457,
+	"version": 1598125604,
 	"fileList": [
 		"data.js",
 		"c2runtime.js",
@@ -41,6 +41,8 @@
 		"images/sprite32-sheet0.png",
 		"images/key-sheet0.png",
 		"images/sprite33-sheet0.png",
+		"images/jump_boost-sheet0.png",
+		"images/sprite34-sheet0.png",
 		"media/door-lock-3_zkwogmvd (online-audio-converter.com).m4a",
 		"media/door-lock-3_zkwogmvd (online-audio-converter.com).ogg",
 		"media/03844 (online-audio-converter.com).m4a",

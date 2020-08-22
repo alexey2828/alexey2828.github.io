@@ -1,5 +1,5 @@
 ﻿CACHE MANIFEST
-#1598120457
+#1598125604
 data.js
 c2runtime.js
 jquery-2.1.1.min.js
@@ -40,6 +40,8 @@ images/tiledbackground.png
 images/sprite32-sheet0.png
 images/key-sheet0.png
 images/sprite33-sheet0.png
+images/jump_boost-sheet0.png
+images/sprite34-sheet0.png
 media/door-lock-3_zkwogmvd%20(online-audio-converter.com).m4a
 media/door-lock-3_zkwogmvd%20(online-audio-converter.com).ogg
 media/03844%20(online-audio-converter.com).m4a
