@@ -1,136 +1,212 @@
-﻿<!DOCTYPE html>
-<html manifest="offline.appcache">
+<div id="preloader" class="visible"></div>
+<!DOCTYPE html>
+<html>
 <head>
-    <meta charset="UTF-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-	<title>New project</title>
+	<meta charset="UTF-8">
+	<title></title>
 	
-	<!-- Standardised web app manifest -->
-	<link rel="manifest" href="appmanifest.json" />
-	
-	<!-- Allow fullscreen mode on iOS devices. (These are Apple specific meta tags.) -->
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui" />
-	<meta name="apple-mobile-web-app-capable" content="yes" />
-	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
-	<link rel="apple-touch-icon" sizes="256x256" href="icon-256.png" />
-	<meta name="HandheldFriendly" content="true" />
-	
-	<!-- Chrome for Android web app tags -->
-	<meta name="mobile-web-app-capable" content="yes" />
-	<link rel="shortcut icon" sizes="256x256" href="icon-256.png" />
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+		  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+</head>
+<br>
+<header class="header">
+    <a href="" class="logo"><h style="font-size: 20px; margin-left: 5px; color: white; margin-top: 0px; font-family: 'Noto Sans TC', sans-serif;"><img style="position: relative;margin-top: -8px;" src="https://cdn.discordapp.com/attachments/642355138006220838/722501293796622365/unknown.png"/> Alexey </h><h style="font-family: 'Lato', sans-serif; color: white; font-size: 20px;">Fomin<h></a>
+    <input class="menu-btn" type="checkbox" id="menu-btn" />
+    <label class="menu-icon" for="menu-btn"><span style="margin-left: -40px; margin-top: -20px;" class="navicon"></span></label>
+        <ul class="menu" style="">
+            <li><a href="index.html">About Me</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="https://github.com/alexey2828">GitHub</a></li>
+        </ul>
+</header>
+<body style="background-color: #222222;">
+	<br><br><br><br><br>
+	<div class="wrapper">
+		<div class="container-my">
+			<div class="row" style="margin-top: -60px">
+				<div class="col-md" >
 
-    <!-- All margins and padding must be zero for the canvas to fill the screen. -->
-	<style type="text/css">
-		* {
-			padding: 0;
-			margin: 0;
-		}
-		html, body {
-			background: #000;
-			color: #fff;
-			overflow: hidden;
-			touch-action: none;
-			-ms-touch-action: none;
-		}
-		canvas {
-			touch-action-delay: none;
-			touch-action: none;
-			-ms-touch-action: none;
-		}
-    </style>
-	
+					<div class="avatar">
+						<div class="ava">
+						<script language="JavaScript">
+							var a=Math.round(Math.random()*5)
+							image = new Array();
+							image[0]="1.png"
+							image[1]="2.png"
+							image[2]="3.png"
+							image[3]="4.png"
+							image[4]="5.png"
+							image[5]="6.png"
+							document.write (" <img id='avatar' src="+image[a]+"> ");
+							//-->
+							</script>
+						</div>
+					</div>
+				</div>
+				<div class="col-md OK">
+					<div class="adaptive">
+					Web Developer
+					<div><h1 style=" color: white; font-family: 'Noto Sans TC', sans-serif; font-size: 50px;">Alexey Fomin</h1></div>
+					<div><h5 style="font-size: 16px; margin-top: 20px; color: #9c9999; font-family: 'lato', sans-serif;">Здравствуйте! Меня зовут Алексей, я занимаюсь разработкой сайтов с 2018 года. Имею набор навыков веб разработки, а так же опыт работы на фрилансе. Разрабатываю интерфейсы, дизайн и функционал для сайтов с нуля.</h5></div>
+					<!--Здравствуйте! Меня зовут Алексей, занимаюсь разработкой сайтов с 2018 года. Имею набор навыков веб разработки, а так же опыт работы на фрилансе. Разрабатываю интерфейсы, дизайн и функционал для сайтов с нуля.-->
+						<a style="text-decoration: none;" href="#"><div class="btn_active">
+							<div id="btn_active">Send me</div>
+						</div></a></div>
+				</div>
 
-</head> 
- 
-<body> 
-	<div id="fb-root"></div>
-	
-	<script>
-	// Issue a warning if trying to preview an exported project on disk.
-	(function(){
-		// Check for running exported on file protocol
-		if (window.location.protocol.substr(0, 4) === "file")
-		{
-			alert("Exported games won't work until you upload them. (When running on the file:/// protocol, browsers block many features from working for security reasons.)");
-		}
-	})();
-	</script>
-	
-	<!-- The canvas must be inside a div called c2canvasdiv -->
-	<div id="c2canvasdiv">
-	
-		<!-- The canvas the project will render to.  If you change its ID, don't forget to change the
-		ID the runtime looks for in the jQuery events above (ready() and cr_sizeCanvas()). -->
-		<canvas id="c2canvas" width="854" height="480">
-			<!-- This text is displayed if the visitor's browser does not support HTML5.
-			You can change it, but it is a good idea to link to a description of a browser
-			and provide some links to download some popular HTML5-compatible browsers. -->
-			<h1>Your browser does not appear to support HTML5.  Try upgrading your browser to the latest version.  <a href="http://www.whatbrowser.org">What is a browser?</a>
-			<br/><br/><a href="http://www.microsoft.com/windows/internet-explorer/default.aspx">Microsoft Internet Explorer</a><br/>
-			<a href="http://www.mozilla.com/firefox/">Mozilla Firefox</a><br/>
-			<a href="http://www.google.com/chrome/">Google Chrome</a><br/>
-			<a href="http://www.apple.com/safari/download/">Apple Safari</a></h1>
-		</canvas>
+			</div>
+		</div>
+		<br><br><br>
+		<div class="container-my">
+			<div id="content_title">What i Do</div>
+			<div class="bottom"></div>
+			<div class="bottom_color"></div>
+			<div class="row">
+				<div class="col-md">
+					<div class="item"><br>
+						<img src="https://img.icons8.com/ios/50/007ced/js.png"/><div style="margin-left: 60px; margin-top: -50px;"> Frontend <br><h style="font-size: 16px; color: #9c9999;">Разрабатываю, верстаю внешний вид сайта, заполняю функциональными компонентами, анимациями, слайдерами, каруселями и т.д. Создаю одностраничные лендинги, сайты-визитки, портфолио.</h></div><!--Разрабатываю, верстаю внешний вид сайта, наполняю функциональными компонентами, анимациями, слайдерами, каруселями и т.д. Одностраничные лендинги, сайты-визитки, портфолио.-->
+					</div><br>
+					<div class="item"><br>
+						<img src="https://img.icons8.com/ios/50/007ced/paint-palette.png"/><div style="margin-left: 60px; margin-top: -50px;"> UI/UX Design <br><h style="font-size: 16px; color: #9c9999;">Разрабатываю, рисую удобные и отзывчивые интерфейсы используя современные технологии. Имею навыки Adobe Photoshop.</h></div>
+						<!--Разрабатываю, рисую удобные и отзывчивые инерфейсы использая современные технологии.-->
+					</div><br>
+
+				</div>
+				<div class="col-md">
+					<div class="item"><br>
+						<img src="https://img.icons8.com/ios/50/007ced/database-export.png"/><div style="margin-left: 60px; margin-top: -50px;"> Backend <br><h style="font-size: 16px; color: #9c9999;">Создаю логику проекта, заполняю необходимый функционал, настраиваю связи, работаю с базой данных. Использую ООП, паттерн проектирования MVC, преимущественно работаю с PHP кодом на бекенд часте.</h></div>
+						<!--Создаю логику проекта, заполняю необходимый функционал, настраиваю связи, работаю с базой данных. Использую ООП, паттерн проектирования MVC, пркимущественно работаю с PHP кодом на бекенд часте.-->
+					</div><br>
+					<div class="item"><br>
+						<img src="https://img.icons8.com/ios/50/007ced/report-card.png"/><div style="margin-left: 60px; margin-top: -50px;"> Full Stack <br><h style="font-size: 16px; color: #9c9999;">Последовательно решаю задачи на всех стадиях разработки проекта от создания и рисования дизайна, до интегрирования функциональности и переноса проекта на хостинг.</h></div>
+					</div>
+				</div>
+			</div>
+		</div>
 		
+		<div class="container-my">
+			<div id="content_title">Testimonials</div>
+			<div class="bottom"></div>
+			<div class="bottom_color"></div>
+				<div id="demo" class="carousel slide" data-ride="carousel">
+				
+				  <!-- Indicators -->
+				  <ul class="carousel-indicators">
+				    <li data-target="#demo" data-slide-to="0" class="active"></li>
+				    <li data-target="#demo" data-slide-to="1"></li>
+				   
+				  </ul>
+				  
+				  <!-- The slideshow -->
+				  <div class="carousel-inner">
+				    <div class="carousel-item active">
+				    	
+				    <div class="slide_1">
+				    	<div class="row">
+				    		<div class="col-md"><br>
+				    			<div class="item_Testimonials">
+									<div class="item_Testimonials_content"><img width="16" height="16" src="https://img.icons8.com/ios-filled/50/444444/quote-left.png"/>
+										<i style="color: silver;">Mauris neque libero, aliquet vel mollis nec, euismod sed tellus. Mauris convallis dictum elit id volutpat. </i><img width="16" height="16" src="https://img.icons8.com/ios-filled/50/444444/quote-right.png"/>
+										<div class="comment_author"><b>Jhon Due</b></div>
+										<h style="font-size: 14px;">Apple</h>
+									</div>
+								</div>
+								<br>
+							</div>
+				    		<div class="col-md"><br>				
+				    			<div class="item_Testimonials">
+									<div class="item_Testimonials_content"><img width="16" height="16" src="https://img.icons8.com/ios-filled/50/444444/quote-left.png"/>
+										<i style="color: silver;">Mauris neque libero, aliquet vel mollis nec, euismod sed tellus. Mauris convallis dictum elit id volutpat. </i><img width="16" height="16" src="https://img.icons8.com/ios-filled/50/444444/quote-right.png"/>
+										<div class="comment_author"><b>Jhon Due</b></div>
+										<h style="font-size: 14px;">Apple</h>
+									</div>
+								</div><br><br>
+						</div>
+				    	</div>
+				    </div>
+
+				    </div>
+				    <div class="carousel-item">
+				      	<div class="row">
+				    		<div class="col-md"><br>
+				    			<div class="item_Testimonials">
+									<div class="item_Testimonials_content"><img width="16" height="16" src="https://img.icons8.com/ios-filled/50/444444/quote-left.png"/>
+										<i style="color: silver;">Mauris neque libero, aliquet vel mollis nec, euismod sed tellus. Mauris convallis dictum elit id volutpat. </i><img width="16" height="16" src="https://img.icons8.com/ios-filled/50/444444/quote-right.png"/>
+										<div class="comment_author"><b>Jhon Due</b></div>
+										<h style="font-size: 14px;">Apple</h>
+									</div>
+								</div><br>
+							</div>
+				    		<div class="col-md"><br>				
+				    			<div class="item_Testimonials">
+									<div class="item_Testimonials_content"><img width="16" height="16" src="https://img.icons8.com/ios-filled/50/444444/quote-left.png"/>
+										<i style="color: silver;">Mauris neque libero, aliquet vel mollis nec, euismod sed tellus. Mauris convallis dictum elit id volutpat. </i><img width="16" height="16" src="https://img.icons8.com/ios-filled/50/444444/quote-right.png"/>
+										<div class="comment_author"><b>Jhon Due</b></div>
+										<h style="font-size: 14px;">Apple</h>
+									</div>
+								</div><br><br>
+						</div>
+				    	</div>
+				    </div>
+				  </div>
+				  
+				</div>
+		</div>
+		<div class="footer">
+			<div class="footer_links">
+			<a id="links" href="#">Facebook</a>
+			<a id="links" style="margin-left: 15px;" href="#">Instagram</a>
+			<a id="links" style="margin-left: 15px;" href="#">LinkedIn</a>
+			</div>
+		</div>
 	</div>
-	
-	<!-- Pages load faster with scripts at the bottom -->
-	
-	<!-- Construct 2 exported games require jQuery. -->
-	<script src="jquery-2.1.1.min.js"></script>
+</body>
+</html>   	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script type="text/javascript">
+<script type="text/javascript">
+	$('.carousel').carousel({
+  interval: 20000
+})
+</script>
+<script type="text/javascript">
+	function loadData() {
+  return new Promise((resolve, reject) => {
+    setTimeout(resolve, 200);
+  })
+}
 
+loadData()
+  .then(() => {
+    let preloaderEl = document.getElementById('preloader');
+    preloaderEl.classList.add('hidden');
+    preloaderEl.classList.remove('visible');
+  });
+</script>
 
-	
-    <!-- The runtime script.  You can rename it, but don't forget to rename the reference here as well.
-    This file will have been minified and obfuscated if you enabled "Minify script" during export. -->
-	<script src="c2runtime.js"></script>
+<!-- смена цвета при наведении 
+<script type="text/javascript">         
+                        function rndColor() {
+                                var r = Math.floor(Math.random()*256);
+                                var g = Math.floor(Math.random()*256);
+                                var b = Math.floor(Math.random()*256);
+                                var rgb = 'rgb(' + r + ',' + g + ',' + b + ')';
+                                var zzzBl = document.getElementById('zzz');
+                                zzzBl.style.backgroundColor = rgb;
+                                zzzBl.onmouseover = function() {rndColor()}}
+                        window.onload = rndColor;               
+                </script>  
+        </head>
+        <body>
+                <div style="background-color:#ffffff; width:100px; height:100px" onmouseover="rndColor()" onmouseup="rndColor()" id="zzz"></div>            
+        </body>
+-->
 
-    <script>
-		// Start the Construct 2 project running on window load.
-		jQuery(document).ready(function ()
-		{			
-			// Create new runtime using the c2canvas
-			cr_createRuntime("c2canvas");
-		});
-		
-		// Pause and resume on page becoming visible/invisible
-		function onVisibilityChanged() {
-			if (document.hidden || document.mozHidden || document.webkitHidden || document.msHidden)
-				cr_setSuspended(true);
-			else
-				cr_setSuspended(false);
-		};
-		
-		document.addEventListener("visibilitychange", onVisibilityChanged, false);
-		document.addEventListener("mozvisibilitychange", onVisibilityChanged, false);
-		document.addEventListener("webkitvisibilitychange", onVisibilityChanged, false);
-		document.addEventListener("msvisibilitychange", onVisibilityChanged, false);
-		
-		function OnRegisterSWError(e)
-		{
-			console.warn("Failed to register service worker: ", e);
-		};
-		
-		// Runtime calls this global method when ready to start caching (i.e. after startup).
-		// This registers the service worker which caches resources for offline support.
-		window.C2_RegisterSW = function C2_RegisterSW()
-		{
-			if (!navigator.serviceWorker)
-				return;		// no SW support, ignore call
-			
-			try {
-				navigator.serviceWorker.register("sw.js", { scope: "./" })
-				.then(function (reg)
-				{
-					console.log("Registered service worker on " + reg.scope);
-				})
-				.catch(OnRegisterSWError);
-			}
-			catch (e)
-			{
-				OnRegisterSWError(e);
-			}
-		};
-    </script>
-</body> 
-</html> 
